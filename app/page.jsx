@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Accueil from "./(pages)/home/page";
 
 export default function Home() {
   return (
-    <main className="container">
-      <h1 className="">Coucou</h1>
-      
-    </main>
+    <div className={`container`}>
+    <Accueil />
+    </div>
   );
 }

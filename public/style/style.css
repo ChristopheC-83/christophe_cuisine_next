@@ -1,119 +1,23 @@
-/* Utilisation des variables */
-.bg-clip {
-  background: linear-gradient(45deg, var(--color-background) 0%, var(--color-secondary) 100%);
+@import url("https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap");
+.midFlex,
+.flexMid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-clip-opacity {
-  background: linear-gradient(45deg, var(--color-primary-op) 0%, var(--color-secondary-op) 100%);
+.posMid,
+.midPos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.bg-clip-opacity-white {
-  background: linear-gradient(45deg, var(--color-primary-op2) 0%, var(--color-secondary-op2) 100%);
-}
-
-.text-clip {
-  background: linear-gradient(235deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  background-clip: text;
-  color: transparent;
-}
-
-.textShadowClip {
-  text-shadow: 1px 1px 3px var(--color-shadow);
-}
-
-.text-color1 {
-  color: var(--color-primary);
-}
-
-.text-color2 {
-  color: var(--color-secondary);
-}
-
-.customBorder {
-  border: 1px solid var(--color-secondary);
-}
-
-.filterShadow {
-  filter: drop-shadow(1px 1px 3px var(--color-shadow));
-}
-
-.customShadow {
-  box-shadow: 0px 5px 8px 2px var(--color-shadow);
-}
-
-.customShadowMd {
-  box-shadow: 0px 0px 10px 3px var(--color-shadow);
-}
-
-.customShadowLg {
-  box-shadow: 0px 0px 15px 6px var(--color-shadow);
-}
-
-.customShadowXl {
-  box-shadow: 0px 7px 30px 12px var(--color-shadow);
-}
-
-.bottomShadowL {
-  box-shadow: 5px 0px 3px 0px var(--color-primary) inset, 0px 5px 3px -2px var(--color-primary);
-}
-
-.bottomShadowR {
-  box-shadow: 5px 5px 3px 0px var(--color-primary);
-}
-
-h1 {
-  font-size: clamp(32px, 22px + 2.2vw, 60px);
-  letter-spacing: calc(1px + 0.1vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-h2 {
-  font-size: clamp(23px, 18px + 1.65vw, 40px);
-  letter-spacing: calc(1px + 0.035vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-h3 {
-  font-size: clamp(20px, 18px + 1vw, 29px);
-  letter-spacing: calc(1px + 0.018vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-h4 {
-  font-size: clamp(18px, 13px + 0.7vw, 22px);
-  letter-spacing: calc(1px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-h5 {
-  font-size: clamp(16px, 11px + 0.4vw, 18px);
-  letter-spacing: calc(0.8px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-p {
-  font-size: clamp(13px, 11px + 0.4vw, 18px);
-  line-height: clamp(27px, 22px + 0.66vw, 33px);
-  font-family: "Roboto";
-}
-
-.text-shadow {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.dark .text-shadow {
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+.transX {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .box-shadow {
@@ -122,6 +26,14 @@ p {
 
 .dark .box-shadow {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dark .text-shadow {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
 }
 
 .flip_hover:hover {
@@ -136,24 +48,6 @@ p {
     transform: rotateY(-360deg);
   }
 }
-.shadow_spectre {
-  box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.6);
-}
-
-.text-shadow-white {
-  text-shadow: 0px 0px 5px rgba(250, 250, 250, 0.8);
-}
-
-.credits a {
-  color: rgb(73, 73, 238);
-  text-decoration: underline;
-  transition: all 0.3s ease;
-}
-.credits a:hover {
-  color: rgb(25, 25, 223);
-  margin-left: 10px;
-}
-
 .pulse-right {
   transform-origin: center;
   animation: pulse-right 1.2s infinite;
@@ -186,17 +80,50 @@ p {
     transform: translateX(10px);
   }
 }
-.midFlex,
-.flexMid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.h1 {
+  font-size: clamp(32px, 22px + 2.2vw, 60px);
+  letter-spacing: calc(1px + 0.1vw);
+  font-weight: bold;
+  font-family: "Labrada";
 }
 
-.posMid,
-.midPos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.h2 {
+  font-size: clamp(23px, 18px + 1.65vw, 40px);
+  letter-spacing: calc(1px + 0.035vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h3 {
+  font-size: clamp(20px, 18px + 1vw, 29px);
+  letter-spacing: calc(1px + 0.018vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h4 {
+  font-size: clamp(18px, 13px + 0.7vw, 22px);
+  letter-spacing: calc(1px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h5 {
+  font-size: clamp(16px, 11px + 0.4vw, 18px);
+  letter-spacing: calc(0.8px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.p {
+  font-size: clamp(13px, 11px + 0.4vw, 18px);
+  line-height: clamp(27px, 22px + 0.66vw, 33px);
+  font-family: "Reem Kufi fun";
+}
+
+:root {
+  --clair: #f9f9f9;
+  --fonce: #111;
+  --rose: #e752e7;
+  --marron: #c07f2a;
 }/*# sourceMappingURL=style.css.map */

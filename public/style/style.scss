@@ -1,22 +1,14 @@
 
-@import "custom/main";
-@import "custom/polices";
+
 @import "custom/common";
 @import "custom/custom";
+@import "custom/animations";
+@import "custom/polices";
 
-.midFlex,
-.flexMid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+:root {
+  --clair: #f9f9f9;
+  --fonce: #111;
+  --rose: #e752e7;
+  --marron: #c07f2a;
 }
-
-.posMid,
-.midPos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
