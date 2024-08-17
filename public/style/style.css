@@ -81,47 +81,6 @@
     transform: translateX(10px);
   }
 }
-.h1 {
-  font-size: clamp(32px, 22px + 2.2vw, 60px);
-  letter-spacing: calc(1px + 0.1vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h2 {
-  font-size: clamp(23px, 18px + 1.65vw, 40px);
-  letter-spacing: calc(1px + 0.035vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h3 {
-  font-size: clamp(20px, 18px + 1vw, 29px);
-  letter-spacing: calc(1px + 0.018vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h4 {
-  font-size: clamp(18px, 13px + 0.7vw, 22px);
-  letter-spacing: calc(1px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h5 {
-  font-size: clamp(16px, 11px + 0.4vw, 18px);
-  letter-spacing: calc(0.8px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.p {
-  font-size: clamp(13px, 11px + 0.4vw, 18px);
-  line-height: clamp(27px, 22px + 0.66vw, 33px);
-  font-family: "Reem Kufi fun";
-}
-
 .navItemHover {
   position: relative;
   overflow: hidden; /* Pour empêcher le débordement de l'effet */
@@ -231,6 +190,7 @@
   background: no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  font-family: "Labrada";
 }
 .entete .entete-title {
   width: 100%;
@@ -238,16 +198,55 @@
 }
 .entete .entete-title span {
   display: block;
-  font-family: "Dancing Script", cursive;
   text-align: center;
   font-weight: bold;
 }
 .entete .entete-title-h1 {
-  font-size: clamp(18px, 8px + 4vw, 60px);
-  margin: 2.5% auto;
+  font-size: clamp(18px, 8px + 4.8vw, 60px);
 }
 .entete .entete-title-h2 {
-  font-size: clamp(16px, 6px + 3.5vw, 50px);
+  font-size: clamp(16px, 6px + 3.8vw, 50px);
+}
+
+.h1 {
+  font-size: clamp(32px, 22px + 2.2vw, 60px);
+  letter-spacing: calc(1px + 0.1vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h2 {
+  font-size: clamp(23px, 18px + 1.65vw, 40px);
+  letter-spacing: calc(1px + 0.035vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h3 {
+  font-size: clamp(20px, 18px + 1vw, 29px);
+  letter-spacing: calc(1px + 0.018vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h4 {
+  font-size: clamp(18px, 13px + 0.7vw, 22px);
+  letter-spacing: calc(1px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.h5 {
+  font-size: clamp(16px, 11px + 0.4vw, 18px);
+  letter-spacing: calc(0.8px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
+
+.p {
+  font-size: clamp(13px, 11px + 0.4vw, 18px);
+  line-height: clamp(27px, 22px + 0.66vw, 33px);
+  font-family: "Reem Kufi fun";
 }
 
 :root {

@@ -9,6 +9,7 @@
   background: no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  font-family: "Labrada";
 
   .entete-title {
     width: 100%;
@@ -16,16 +17,14 @@
 
     span {
       display: block;
-      font-family: "Dancing Script", cursive;
       text-align: center;
       font-weight: bold;
     }
   }
   .entete-title-h1 {
-    font-size: clamp(18px, (calc(8px + 4vw)), 60px);
-    margin: 2.5% auto;
+    font-size: clamp(18px, (calc(8px + 4.8vw)), 60px);
   }
   .entete-title-h2 {
-    font-size: clamp(16px, (calc(6px + 3.5vw)), 50px);
+    font-size: clamp(16px, (calc(6px + 3.8vw)), 50px);
   }
 }
