@@ -28,7 +28,7 @@ export default function Menu() {
     <Sheet>
       <SheetTrigger asChild className="">
         <div className="z-50 p-2 w-fit">
-          <GiHamburgerMenu className="scale-[2] text-neutral-900 md:hidden" />
+          <GiHamburgerMenu className="scale-[2] text-neutral-900 " />
         </div>
       </SheetTrigger>
       <SheetContent side="left" className="p-2 bg-neutral-200">

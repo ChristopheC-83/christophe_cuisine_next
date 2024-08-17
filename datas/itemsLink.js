@@ -9,6 +9,5 @@ export const itemsLink = [
     { url: "/realisations", icon: <FaCamera />, text: "Réalisations" },
     { url: "/fonctionnement", icon: <FaRoute />, text: "Fonctionnement" },
     { url: "/tarifs", icon: <FaMoneyBillWave />, text: "Tarifs" },
-    { url: "/mentions", icon: <FaBalanceScale />, text: "Mentions Légales" },
     { url: "/contact", icon: <FaMessage />, text: "Contactez-moi" },
 ];

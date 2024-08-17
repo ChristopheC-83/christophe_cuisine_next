@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap");
 .midFlex,
@@ -119,6 +120,101 @@
   font-size: clamp(13px, 11px + 0.4vw, 18px);
   line-height: clamp(27px, 22px + 0.66vw, 33px);
   font-family: "Reem Kufi fun";
+}
+
+.navItemHover {
+  position: relative;
+  overflow: hidden; /* Pour empêcher le débordement de l'effet */
+}
+
+.navItemHover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
+  background: -webkit-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
+  background: -moz-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
+  opacity: 0;
+  transform: translateY(100%);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+  z-index: 1; /* Assurez-vous que le before est derrière le contenu */
+}
+
+.navItemHover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
+  background: -webkit-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
+  background: -moz-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
+  opacity: 0;
+  transform: translateY(-100%);
+  transform-origin: left;
+  transition: all 0.5s ease-in-out;
+  z-index: 1; /* Assurez-vous que le before est derrière le contenu */
+}
+
+.navItemHover:hover::before {
+  opacity: 70%;
+  transform: translateY(0);
+}
+
+.navItemHover:hover::after {
+  opacity: 70%;
+  transform: translateY(0);
+}
+
+.navItemHover h5 {
+  z-index: 2; /* Le texte et l'icône passent devant le before */
+  position: relative; /* Nécessaire pour que z-index fonctionne */
+}
+
+.navActive {
+  background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
+  background: -webkit-linear-gradient(45deg, #000000 0%, #c07f2a 50%);
+  background: -moz-linear-gradient(45deg, #000000 0%, #c07f2a 50%);
+  color: white;
+  opacity: 90%;
+}
+
+.navActive .navText {
+  transform: translateY(0);
+}
+
+.navActive .navIcon {
+  font-size: 30px;
+}
+
+.navIcon {
+  font-size: 40px;
+  animation: all 0.5s ease-in-out;
+}
+
+.navItemHover:hover .navIcon {
+  font-size: 30px;
+}
+
+.navText {
+  transform: translateY(150%);
+  animation: all 0.5s ease-in-out;
+  color: white;
+}
+
+.navItemHover:hover .navText {
+  transform: translateY(0);
+}
+
+.text-clip {
+  background: linear-gradient(235deg, #c07f2a 50%, #000000 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 :root {
