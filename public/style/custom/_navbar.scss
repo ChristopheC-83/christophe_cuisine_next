@@ -18,7 +18,7 @@
   opacity: 0;
   transform: translateY(100%);
   transform-origin: left;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 1; /* Assurez-vous que le before est derrière le contenu */
 }
 .navItemHover::after {
@@ -66,15 +66,18 @@
 }
 .navActive .navIcon {
   font-size: 30px;
+  transform: translateY(0);
 }
 
 .navIcon {
   font-size: 40px;
+  transform: translateY(10px);
   animation: all 0.5s ease-in-out;
 }
 
 .navItemHover:hover .navIcon {
   font-size: 30px;
+  transform: translateY(0);
 }
 .navText {
   transform: translateY(150%);

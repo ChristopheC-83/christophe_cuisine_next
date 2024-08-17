@@ -16,7 +16,7 @@ export default function Navbar() {
         Christophe C, Poseur de Cuisines
       </h1>
       <div
-        className={`max-md:hidden grow flex justify-between items-center gap-x-1 overflow-hidden  `}
+        className={`max-md:hidden grow flex justify-between items-center gap-x-1 overflow-hidden lg:pl-4  `}
       >
         {itemsLink.map((item, index) => (
           <Link
