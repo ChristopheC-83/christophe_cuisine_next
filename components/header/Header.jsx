@@ -9,12 +9,12 @@ export default function Header() {
       className={`fixed transX w-full flex justify-between items-center
          py-2 sm:py-3 md:py-4 
          px-3 sm:px-4 md:px-6
-           bg-neutral-100 max-w-[1200px]`}
+            max-w-[1200px]`}
     >
       {/* navigation */}
       <Menu />
       {/* titre */}
-      <h2 className={`h2 max-xs:hidden pb-2`}>Votre Poseur de Cuisine</h2>
+      <h2 className={`h2 max-xs:hidden pb-2 text-center`}>Christophe C. <br /> Votre Poseur de Cuisine</h2>
       <h2 className={`h4 xs:hidden`}>Votre Poseur de Cuisine</h2>
       {/* contact */}
       <Button>

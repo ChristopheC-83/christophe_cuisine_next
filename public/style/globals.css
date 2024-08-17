@@ -1,10 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
 
+body {
+  background: #f1f1f1;
+  background: linear-gradient(180deg, #f1f1f1 20%, #c07f2a50 100%);
+  background: -webkit-linear-gradient(180deg, #f1f1f1 20%, #c07f2a50 100%);
+  background: -moz-linear-gradient(180deg, #f1f1f1 20%, #c07f2a50 100%);
+}
+header {
+  background-color: #f1f1f1;
+}
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
