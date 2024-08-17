@@ -21,6 +21,7 @@ export default function Accueil() {
         bgImg={bgImg}
         color={color}
       />
+     
       Accueil
     </div>
   );

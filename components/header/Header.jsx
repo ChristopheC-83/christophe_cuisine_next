@@ -7,10 +7,10 @@ import Navbar from "./_Navbar";
 export default function Header() {
   return (
     <header
-      className={`mx-auto w-full flex justify-between items-center
+      className={` w-full flex justify-between items-center
          py-2 sm:py-3 md:py-4 
          px-3 sm:px-4 md:px-6
-            max-w-[1200px]`}
+            max-w-[1400px] bg-neutral-200/85 md:rounded-b-full fixed top-0 left-1/2 -translate-x-[50%]  z-50 shadow-2xl filter-blur`}
     >
       {/* navigation pc */}
       <div  className={`md:hidden`}>

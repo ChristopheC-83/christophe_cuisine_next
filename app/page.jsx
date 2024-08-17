@@ -3,7 +3,7 @@ import Accueil from "./(pages)/home/page";
 
 export default function Home() {
   return (
-    <div className={`container`}>
+    <div className={``}>
     <Accueil />
     </div>
   );

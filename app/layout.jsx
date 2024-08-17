@@ -1,6 +1,8 @@
 import Header from "@/components/header/Header";
 import "@/public/style/style.css";
 import "@/public/style/globals.css";
+import Footer from "@/components/footer/Footer";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
   title: "Christophe Cuisine",
@@ -11,8 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className="flex flex-col min-h-svh ">
-        <Header />
+        {/* <Header /> */}
         <main className="w-full grow">{children}</main>
+        <Separator/>
+        <Footer/>
       </body>
     </html>
   );

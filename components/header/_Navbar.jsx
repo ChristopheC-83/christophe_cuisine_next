@@ -8,8 +8,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="mx-auto midFlex max-lg:flex-col-reverse">
-      <h1 className={`h3 xs:hidden lg:block pb-2 text-clip max-md:text-center`}>
+    <div className="flex items-center justify-between w-full px-6 max-lg:flex-col-reverse ">
+      <h1 className={`h3 xs:hidden lg:block pb-2 text-clip max-md:text-center text-nowrap `}>
         Christophe C<br /> Poseur de Cuisines
       </h1>
       <h1 className={`h3 hidden xs:block lg:hidden  pb-2 text-clip text-nowrap`}>
