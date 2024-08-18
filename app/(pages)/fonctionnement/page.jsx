@@ -1,4 +1,6 @@
 import Hero from "@/components/hero/Hero";
+import TextFrame from "@/components/textFrame/TextFrame";
+import { fonctionnementDatas } from "@/datas/fonctionnementDatas";
 import enteteImg from "@/public/images/Entetes/fonctionnement.png";
 
 export default function Fonctionnement() {
@@ -21,7 +23,11 @@ export default function Fonctionnement() {
         bgImg={bgImg}
         color={color}
       />
-      Fonctionnement
+      <div className="container my-10">
+        {fonctionnementDatas.map((datas, index) => (
+          <TextFrame key={index} text={datas.text} img={datas.img.src} index={index} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -300,6 +300,28 @@
   display: block;
 }
 
+.partner {
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  width: 180px;
+  animation: all 0.5s ease-in-out;
+}
+.partner:hover {
+  opacity: 0.8;
+}
+
+.partner1 {
+  background-color: #284b73;
+}
+
+.partner2 {
+  background-color: #ed0015;
+  margin-bottom: 30px;
+}
+
 :root {
   --clair: #f9f9f9;
   --fonce: #111;
