@@ -9,9 +9,9 @@ export default function TextFrame({ text, img, index, children }) {
         index % 2 === 1 ? "flex-row-reverse" : ""
       } my-8 md:my-12 gap-6 mx-2 xs:mx-3 md:mx-4`}
     >
-      <p className={`p  w-[88vw] max-w-[460px] md:max-w-[688px] md:w-7/12`}>
+      <div className={`p  w-[88vw] max-w-[460px] md:max-w-[688px] md:w-7/12`}>
         {text}
-      </p>
+      </div>
       {/* <Image src={img} alt="cuisine" width={400} height={225} className={`w-2/6 rounded-xl shadow-xl`} /> */}
       <div className="border-2 border-red-200 grow midFlex">
         <div

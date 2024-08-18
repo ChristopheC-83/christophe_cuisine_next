@@ -1,5 +1,7 @@
 
 import Hero from "@/components/hero/Hero";
+import TextFrame from "@/components/textFrame/TextFrame";
+import { tarifDatas } from "@/datas/tarifDatas";
 import enteteImg from "@/public/images/Entetes/tarifs.png";
 
  export default function Tarifs() {
@@ -24,7 +26,12 @@ return (
         bgImg={bgImg}
         color={color}
       />
-Tarifs
+
+<div className="container my-10">
+        {tarifDatas.map((datas, index) => (
+          <TextFrame key={index} text={datas.text} img={datas.img.src} index={index} />
+        ))}
+      </div>
     </div>
 
   );
