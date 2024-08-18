@@ -24,7 +24,7 @@ export default function Realisations() {
         bgImg={bgImg}
         color={color}
       />
-      <div className="container my-10">
+      <div className="container mt-10 mb-4">
         {realisationsDatas.map((datas, index) => (
           <TextFrame key={index} text={datas.text} img={datas.img.src} index={index} />
         ))}

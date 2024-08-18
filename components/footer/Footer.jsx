@@ -32,8 +32,8 @@ export default function Footer() {
               <ArrowToTop />
           </div>
             <ul className="flex flex-wrap justify-center gap-4 mt-6 max-xs:mx-auto xs:mt-12 max-xs:flex-col md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
-              {itemsLink.map((item) => (
-                <li key={item.id}>
+              {itemsLink.map((item, index) => (
+                <li key={index}>
                   <Link
                     href={item.url}
                     className="flex-col text-gray-700 duration-300 flexMid hover:text-gray-700/75 hover:-translate-y-2"

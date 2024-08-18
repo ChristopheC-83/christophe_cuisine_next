@@ -65,8 +65,12 @@ export const homeDatas = [
         <div className="home-icone">
           <FaHammer />
         </div>
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           le demontage de l'ancienne cuisine et son évacuation à la déchetterie.
         </p>
         <div className="flex home-icone">
@@ -74,8 +78,12 @@ export const homeDatas = [
           <FaPlug style={{ margin: "0 30px" }} />
         </div>
 
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           le déplacement de l'électricité et/ou de la plomberie existante(s).
         </p>
         <div className="flex home-icone">
@@ -84,8 +92,12 @@ export const homeDatas = [
           <FaDraftingCompass style={{ margin: "0 30px" }} />
         </div>
 
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           le métré de validation avec les plans de votre cuisiniste.
         </p>
         <div className="flex home-icone">
@@ -94,8 +106,12 @@ export const homeDatas = [
           <FaWrench style={{ margin: "0 30px" }} />
         </div>
 
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           et bien évidemmment le montage de la nouvelle cuisine (en kit ou
           montée d'usine)
         </p>
@@ -117,8 +133,12 @@ export const homeDatas = [
         <div className="home-icone">
           <FaListAlt />
         </div>
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           Je peux gérer la pose complète, les éventuels travaux complémentaires,
         </p>
         <div className="flex home-icone">
@@ -126,8 +146,12 @@ export const homeDatas = [
           <FaMoneyBillWave />
           <FaMoneyBillWave style={{ margin: "0 30px" }} />
         </div>
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           Ou juste changer les plans de travail avec remise en service de
           l'évier et de la plaque de cuisson pour un coup de jeune de votre
           cuisine,
@@ -137,16 +161,24 @@ export const homeDatas = [
 
           <FaMoneyBillWave style={{ margin: "0 30px" }} />
         </div>
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           ou vous proposer une journée d'aide à la pose pour laquelle vous aurez
           préparé le terrain et qui permettra une facture plus légère !
         </p>
         <div className="home-icone">
           <FaPiggyBank />
         </div>
-        <p className="flex justify-start" >
-          <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0  }} />
+        <p className="flex justify-start">
+          <span>
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+          </span>
           Mon offre se veut la plus complète et détaillée possible pour que vous
           puissiez cibler vos priorités. Le principal reste la communication et
           la préparation. Je m'engage à ne laisser aucune question sans réponse.
