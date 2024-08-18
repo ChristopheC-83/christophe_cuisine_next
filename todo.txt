@@ -1,0 +1,3 @@
+- animation images coulissantes dans TextFrame.jsx
+
+- arranger texte dans Hero sur grand écran
