@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="px-8 py-3 max-lg:hidden">
               <ArrowToTop />
           </div>
-            <ul className="flex flex-wrap justify-center gap-4 mt-12 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+            <ul className="flex flex-wrap justify-center gap-4 mt-6 max-xs:mx-auto xs:mt-12 max-xs:flex-col md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
               {itemsLink.map((item) => (
                 <li key={item.id}>
                   <Link
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <p className="mt-12 text-sm text-center text-gray-500 lg:text-right">
           Copyright &copy; 2024. Tous droits réservés.
-          <Link href="/mentions" className="text-gray-500 hover:text-gray-700">
+          <Link href="/mentions" className="text-gray-500 underline hover:text-gray-700">
             Mentions Légales
           </Link>
         </p>

@@ -1,4 +1,6 @@
 import Hero from "@/components/hero/Hero";
+import TextFrame from "@/components/textFrame/TextFrame";
+import { homeDatas } from "@/datas/homeDatas";
 import enteteImg from "@/public/images/Entetes/accueil.png";
 
 export default function Accueil() {
@@ -21,8 +23,11 @@ export default function Accueil() {
         bgImg={bgImg}
         color={color}
       />
-     
-      Accueil
+      <div className="container my-10">
+        {homeDatas.map((datas, index) => (
+          <TextFrame key={index} text={datas.text} img={datas.img.src} index={index} />
+        ))}
+      </div>
     </div>
   );
 }

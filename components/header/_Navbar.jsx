@@ -8,7 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-between w-full px-6 max-lg:flex-col-reverse ">
+    <div className="flex items-center justify-between w-full px-6 text-black max-lg:flex-col-reverse ">
       <h1 className={`h3 xs:hidden lg:block pb-2 text-clip max-md:text-center text-nowrap `}>
         Christophe C<br /> Poseur de Cuisines
       </h1>

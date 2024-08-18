@@ -4,20 +4,20 @@ import { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 
 export default function ArrowToTop() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 100) {
+  //     setIsVisible(true);
+  //   } else {
+  //     setIsVisible(false);
+  //   }
+  // };
 
   const scrollToTop = () => {
     window.scrollTo({
