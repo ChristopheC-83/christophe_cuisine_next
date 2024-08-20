@@ -35,7 +35,7 @@ export async function POST(req) {
           ],
           TemplateID: 6219792,
           TemplateLanguage: true,
-          Subject: "Mail de C2Com_contact : " + email,
+          Subject: "Mail de Cuisine : " + nom,
           Variables: {
             nom, prenom, message, email,
           },

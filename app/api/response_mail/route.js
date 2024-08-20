@@ -22,7 +22,7 @@ export async function POST(req) {
         {
           From: {
             Email: "contact@ducompagnon.fr",
-            Name: "Le Compagnon de Com !",
+            Name: "Christophe, Poseur Cuisine",
           },
           To: [
             {
@@ -32,7 +32,7 @@ export async function POST(req) {
           ],
           TemplateID: 6219791,
           TemplateLanguage: true,
-          Subject: "Message envoyé à Compagnon de Com",
+          Subject: "Message envoyé à Christophe/Cuisine",
           Variables: {
             nom, prenom, message, email,
           },
