@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function TextFrame({ text, img, index, children }) {
-  console.log(text);
+  
 
   return (
     <div

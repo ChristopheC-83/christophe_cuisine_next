@@ -5,10 +5,22 @@ import Footer from "@/components/footer/Footer";
 import { Separator } from "@/components/ui/separator";
 import { Toaster } from "sonner";
 
+let title = "Accueil | Poseur Cuisines";
+let desc ="Poseur de cuisines autour de Nîmes, de Arles à Alès et de Montpellier à Remoulin. La pose de votre ciuisine équipée est un investissement important. Découvrez mes tarifs de pose de cuisine et contactez-moi pour un devis gratuit." 
+
 export const metadata = {
-  title: "Christophe Cuisine",
-  description:
-    "Installé à mon compte depuis mai 2015, je vous apporte mon expérience et vous propose mes services autour de Nîmes. Entre Remoulins et Montpellier et de Arles à Alès.",
+  
+  title: title,
+  description:desc,
+  // Open Graph metadata
+  openGraph: {
+    title: title,
+    description:desc,
+    url: "https://www.christophe-cuisine.fr/",
+    type: "website",
+    site_name: "christophe-cuisine",
+    locale: "fr_FR",
+  },
 };
 
 export default function RootLayout({ children }) {
