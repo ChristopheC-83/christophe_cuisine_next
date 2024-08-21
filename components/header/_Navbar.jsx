@@ -22,11 +22,11 @@ export default function Navbar() {
           <Link
             href={item.url}
             key={index}
-            className={`flex flex-col items-center navItemHover relative group p-2 rounded-full duration-300
+            className={`flex flex-col items-center navItemHover relative group p-2 rounded-full duration-300 
                  w-[144px]
                 ${pathname === item.url ? "navActive" : ""}`}
           >
-            <h5 className="text-current duration-300 navIcon group-hover:text-white">
+            <h5 className="text-current duration-300 navIcon group-hover:text-white ">
               {item.icon}
             </h5>
             <h5 className="navText">{item.text}</h5>
