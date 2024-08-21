@@ -174,7 +174,7 @@ export default function Contact() {
             >
               <textarea
                 id="message"
-                className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring placeholder-gray-50"
+                className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring placeholder-gray-50 rounded-xl"
                 rows="10"
                 placeholder="message"
                 {...register("message", { required: true })}

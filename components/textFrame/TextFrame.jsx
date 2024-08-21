@@ -13,7 +13,7 @@ export default function TextFrame({ text, img, index, children }) {
         {text}
       </div>
       {/* <Image src={img} alt="cuisine" width={400} height={225} className={`w-2/6 rounded-xl shadow-xl`} /> */}
-      <div className="relative border-2 border-red-200 grow max-md:midFlex">
+      <div className="relative grow max-md:midFlex">
         <div
           className="w-[90vw] h-[68vw] md:w-[45vw] md:h-[34vw] max-w-[460px] max-h-[345px] bg-center bg-cover box-shadow-5 rounded-xl md:sticky md:top-[180px] lg:top-[140px] "
           style={{ backgroundImage: `url(${img})` }}
