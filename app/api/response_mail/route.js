@@ -14,7 +14,7 @@ const mailjetClient = mailjet.apiConnect(
 export async function POST(req) {
   try {
     // Parse the JSON body from the request
-    const { email, prenom, nom, message } = await req.json();
+    const { email, prenom, nom, message, tel } = await req.json();
 
     // Send email using Mailjet
     const request = mailjetClient.post("send", { version: "v3.1" }).request({
@@ -34,7 +34,7 @@ export async function POST(req) {
           TemplateLanguage: true,
           Subject: "Message envoyé à Christophe/Cuisine",
           Variables: {
-            nom, prenom, message, email,
+            nom, prenom, message, email,tel
           },
         },
       ],

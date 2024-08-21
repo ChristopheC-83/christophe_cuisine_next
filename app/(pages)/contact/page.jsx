@@ -50,6 +50,8 @@ export default function Contact() {
     }
   }
 
+
+
   async function onSubmitHandler(data) {
     setBtnBlocked(true);
     // console.log("data : ", data);
@@ -83,7 +85,9 @@ export default function Contact() {
         color={color}
       />
       <div className={`container min-h-svh`}>
-        <h1 className={`h1 text-clip text-center my-6`}>Formulaire de contact</h1>
+        <h1 className={`h1 text-clip text-center my-6`}>
+          Formulaire de contact
+        </h1>
         <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-gradient-to-tr from-neutral-200 to-neutral-100">
           <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="flex w-full max-md:flex-col md:gap-x-4">
@@ -125,6 +129,25 @@ export default function Contact() {
               </label>
             </div>
 
+            {/* Telephone */}
+            <label
+              htmlFor="email"
+              className="relative block my-3 border border-gray-400 shadow-sm rounded-xl focus-within:border-neutral-600 focus-within:ring-1 focus-within:ring-neutral-600"
+            >
+              <input
+                type="text"
+                id="tel"
+                className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring placeholder-gray-50 rounded-xl"
+                placeholder="tel"
+                {...register("tel", { required: false })}
+              />
+              <span
+                className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-[#c07f2a] text-white p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs w-28 text-center `}
+              >
+                <b>Téléphone</b>
+              </span>
+            </label>
+            
             {/* email */}
             <label
               htmlFor="email"
