@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { textFrameVariants } from "@/lib/framerVariants";
 
 export default function ArrowToTop() {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,7 +29,11 @@ export default function ArrowToTop() {
   };
 
   return (
-    <div>
+    <motion.div
+    
+    initial={textFrameVariants.initialStateFromBottom}
+    whileInView={textFrameVariants.finalState}
+    >
       {isVisible && (
         // <div className="fixed z-30 cursor-pointer bottom-16 right-6">
         <div className="cursor-pointer bottom-16 right-6">
@@ -37,6 +43,6 @@ export default function ArrowToTop() {
           />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }

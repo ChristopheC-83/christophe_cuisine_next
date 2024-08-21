@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+
+import { motion } from "framer-motion";
 import Hero from "@/components/hero/Hero";
 import enteteImg from "@/public/images/Entetes/contact.png";
 import axios from "axios";
@@ -7,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { textFrameVariants } from "@/lib/framerVariants";
 
 export default function Contact() {
   // entete Hero
@@ -50,8 +53,6 @@ export default function Contact() {
     }
   }
 
-
-
   async function onSubmitHandler(data) {
     setBtnBlocked(true);
     // console.log("data : ", data);
@@ -85,10 +86,20 @@ export default function Contact() {
         color={color}
       />
       <div className={`container min-h-svh`}>
-        <h1 className={`h1 text-clip text-center my-6`}>
+        <motion.h1
+          initial={textFrameVariants.initialStateFromBottom}
+          whileInView={textFrameVariants.finalState}
+          viewport={{ once: true }}
+          className={`h1 text-clip text-center my-6`}
+        >
           Formulaire de contact
-        </h1>
-        <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-gradient-to-tr from-neutral-200 to-neutral-100">
+        </motion.h1>
+        <motion.div
+          initial={textFrameVariants.initialStateFromBottom}
+          whileInView={textFrameVariants.finalState}
+          viewport={{ once: true }}
+          className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-gradient-to-tr from-neutral-200 to-neutral-100"
+        >
           <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="flex w-full max-md:flex-col md:gap-x-4">
               {/* prénom */}
@@ -147,7 +158,7 @@ export default function Contact() {
                 <b>Téléphone</b>
               </span>
             </label>
-            
+
             {/* email */}
             <label
               htmlFor="email"
@@ -202,9 +213,13 @@ export default function Contact() {
               </i>
             </small>
           </p>
-        </div>
+        </motion.div>
 
-        <div className="my-8 text-3xl text-center">
+        <motion.div
+         initial={textFrameVariants.initialStateFromBottom}
+         whileInView={textFrameVariants.finalState}
+        //  viewport={{ once: true }}
+        className="my-8 text-3xl text-center">
           <br />
           Vous pouvez également me contacter par <br /> mail :
           <a href="mailto:contact@christophe-cuisine.fr">
@@ -221,7 +236,7 @@ export default function Contact() {
               <b>06.99.81.22.96</b>
             </u>
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

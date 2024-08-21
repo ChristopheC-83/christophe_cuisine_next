@@ -1,17 +1,27 @@
+"use client";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+import { textFrameVariants } from "@/lib/framerVariants";
 export default function TextFrame({ text, img, index, children }) {
-  
-
   return (
     <div
       className={`flex max-md:flex-col-reverse max-md:items-center relative ${
         index % 2 === 1 ? "flex-row-reverse" : ""
       } my-8 md:my-12 gap-6 mx-2 xs:mx-3 md:mx-4`}
     >
-      <div className={`p  w-[88vw] max-w-[460px] md:max-w-[688px] md:w-7/12`}>
+      <motion.div
+        initial={
+          index % 2 === 0
+            ? textFrameVariants.initialStateFromLeft
+            : textFrameVariants.initialStateFromRight
+        }
+        whileInView={textFrameVariants.finalState}
+        // viewport={{ once: true }}
+        className={`p  w-[88vw] max-w-[460px] md:max-w-[688px] md:w-7/12`}
+      >
         {text}
-      </div>
+      </motion.div>
       {/* <Image src={img} alt="cuisine" width={400} height={225} className={`w-2/6 rounded-xl shadow-xl`} /> */}
       <div className="relative grow max-md:midFlex">
         <div
