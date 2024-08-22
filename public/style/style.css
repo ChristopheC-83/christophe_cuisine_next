@@ -246,7 +246,7 @@
 }
 
 .apparitionH1 {
-  animation: apparitionH1 0.75s ease-in-out;
+  animation: apparitionH1 0.75s ease-in-out forwards;
 }
 
 @keyframes apparitionH1 {
@@ -262,7 +262,7 @@
   }
 }
 .apparitionH2 {
-  animation: apparitionH2 0.75s ease-in-out 0.25s;
+  animation: apparitionH2 0.75s ease-in-out 0.25s forwards;
 }
 
 @keyframes apparitionH2 {
