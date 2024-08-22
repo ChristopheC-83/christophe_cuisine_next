@@ -10,14 +10,14 @@ export default function Hero(props) {
       }}
     >
       <Header />
-      <div className="entete-title text-nowrap md:pt-[140px]">
-        <div className={`xs:my-3 sm:my-4 md:my-6 lg:my-8`}>
-          <h1 className="entete-title-text entete-title-h1 ">
+      <div className={`entete-title text-nowrap md:pt-[140px]  ${props.color==="#111111" ? "whiteShadow" : "blackShadow"}`}>
+        <div className={`xs:my-0 sm:my-3 md:my-16 lg:my-20`}>
+          <h1 className="entete-title-text entete-title-h1 apparitionH1">
             <span>{props.text1}</span>
             <span>{props.text2}</span>
           </h1>
         </div>
-        <h2 className="entete-title-text entete-title-h2">
+        <h2 className="entete-title-text entete-title-h2 apparitionH2">
           <span>{props.text3}</span>
           <span>{props.text4}</span>
         </h2>

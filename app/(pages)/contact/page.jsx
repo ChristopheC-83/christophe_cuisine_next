@@ -17,7 +17,7 @@ export default function Contact() {
   const text2 = "Email ou téléphone ?";
   const text3 = "À vous de choisir !";
   const text4 = "On va y arriver 😉";
-  const color = "#111111 ";
+  const color = "#111111";
   // image de fond
   const bgImg = enteteImg;
 
