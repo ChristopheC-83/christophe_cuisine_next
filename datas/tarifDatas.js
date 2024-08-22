@@ -24,8 +24,8 @@ export const tarifDatas = [
           Pour ce qui est du montage de la cuisine, une grille tarifaire
           interactive est disponible sur simple demande par mail à :<br />
           <br />
-          <a href="mailto:christophe.chiappetta@gmail.com">
-            christophe.chiappetta@gmail.com
+          <a href="mailto:contact@christophe-cuisine.fr">
+            contact@christophe-cuisine.fr
           </a>
           <br />
           <br />
@@ -86,37 +86,48 @@ export const tarifDatas = [
           se compte 400€ HT : <br />
           <br />
           <div className="flex items-center">
-              <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }} />
-              Vous déballez les éléments, préparez les meubles (pieds, retrait de
-              toutes les façaces, mise en place, niveau approximatif), l'évier, les
-              poignées...
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+            Vous déballez les éléments, préparez les meubles (pieds, retrait de
+            toutes les façaces, mise en place, niveau approximatif), l'évier,
+            les poignées...
           </div>
           <br />
           <br />
           <div className="flex items-center">
-              <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px",flexShrink: 0 }} />
-              Nous faisons ensemble ce qui vous gêne le plus, pas de souci ! <br />
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+            Nous faisons ensemble ce qui vous gêne le plus, pas de souci !{" "}
+            <br />
           </div>
           <br />
           <div className="flex items-center">
-              <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px",flexShrink: 0 }} />
-              Je m'occupe de la jonction des caissons, remise à niveau, fixations
-              murales, jonction et découpe des plans de travail, installation et
-              branchement de l'évier et des électro-ménagers...
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+            Je m'occupe de la jonction des caissons, remise à niveau, fixations
+            murales, jonction et découpe des plans de travail, installation et
+            branchement de l'évier et des électro-ménagers...
           </div>
           <br />
           <br />{" "}
           <div className="flex items-center">
-              <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px",flexShrink: 0 }} />
-              Vous gérez l'évacuation des cartons et autres emballages.
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+            Vous gérez l'évacuation des cartons et autres emballages.
           </div>
           <br />
           <br />
           <div className="flex items-center">
-              <FaArrowCircleRight style={{ margin: "0 10px", fontSize: "16px",flexShrink: 0 }} />
-              Nous faisons en sorte que la cuisine soit le plus avancée possible (et
-              surtout fonctionnelle) sur cette journée en fonction de vos besoins et
-              compétences.
+            <FaArrowCircleRight
+              style={{ margin: "0 10px", fontSize: "16px", flexShrink: 0 }}
+            />
+            Nous faisons en sorte que la cuisine soit le plus avancée possible
+            (et surtout fonctionnelle) sur cette journée en fonction de vos
+            besoins et compétences.
           </div>
         </p>
       </div>
