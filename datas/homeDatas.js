@@ -25,7 +25,7 @@ export const homeDatas = [
   {
     text: (
       <div className="home-content-text ">
-        <p style={{ fontWeight: "bold", textAlign: "center" }}>
+        <p style={{ fontWeight: "bold" }} className="w-full midFlex">
           Installé à mon compte depuis mai 2015, je vous apporte mon expérience
           et vous propose mes services autour de Nîmes. <br />
           <br /> Entre Remoulins et Montpellier et de Arles à Alès.

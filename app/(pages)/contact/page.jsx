@@ -54,8 +54,9 @@ export default function Contact() {
   }
 
   async function onSubmitHandler(data) {
+    
     setBtnBlocked(true);
-    // console.log("data : ", data);
+    console.log("data : ", data);
     try {
       const response = await axios.post("/api/send_mail", data, {
         headers: {
@@ -204,7 +205,7 @@ export default function Contact() {
               <h4 className={`w-full `}>Envoyer</h4>
             </button>
           </form>
-          <p class="text-center">
+          <p className="text-center">
             <small>
               <i>
                 Votre adresse mail ne sera jamais conservée/diffusée mais

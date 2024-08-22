@@ -21,3 +21,40 @@ header {
   margin: 0 auto;
   padding: 10px;
 }
+
+/* Styles personnalisés */
+.h1 {
+  @apply font-bold font-labrada;
+  font-size: clamp(32px, calc(22px + 2.2vw), 60px);
+  letter-spacing: calc(1px + 0.10vw);
+}
+
+.h2 {
+  @apply font-bold font-labrada;
+  font-size: clamp(23px, calc(18px + 1.65vw), 40px);
+  letter-spacing: calc(1px + 0.035vw);
+}
+
+.h3 {
+  @apply font-bold font-labrada;
+  font-size: clamp(20px, calc(18px + 1vw), 29px);
+  letter-spacing: calc(1px + 0.018vw);
+}
+
+.h4 {
+  @apply font-bold font-labrada;
+  font-size: clamp(18px, calc(13px + 0.7vw), 22px);
+  letter-spacing: calc(1px + 0.008vw);
+}
+
+.h5 {
+  @apply font-bold font-labrada;
+  font-size: clamp(16px, calc(11px + 0.4vw), 18px);
+  letter-spacing: calc(0.8px + 0.008vw);
+}
+
+.p {
+  @apply font-reem;
+  font-size: clamp(13px, calc(11px + 0.4vw), 18px);
+  line-height: clamp(27px, calc(22px + 0.66vw), 33px);
+}

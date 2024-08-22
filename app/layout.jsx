@@ -6,16 +6,16 @@ import { Separator } from "@/components/ui/separator";
 import { Toaster } from "sonner";
 
 let title = "Accueil | Poseur Cuisines";
-let desc ="Poseur de cuisines autour de Nîmes, de Arles à Alès et de Montpellier à Remoulin. La pose de votre ciuisine équipée est un investissement important. Découvrez mes tarifs de pose de cuisine et contactez-moi pour un devis gratuit." 
+let desc =
+  "Poseur de cuisines autour de Nîmes, de Arles à Alès et de Montpellier à Remoulin. La pose de votre ciuisine équipée est un investissement important. Découvrez mes tarifs de pose de cuisine et contactez-moi pour un devis gratuit.";
 
 export const metadata = {
-  
   title: title,
-  description:desc,
+  description: desc,
   // Open Graph metadata
   openGraph: {
     title: title,
-    description:desc,
+    description: desc,
     url: "https://www.christophe-cuisine.fr/",
     type: "website",
     site_name: "christophe-cuisine",

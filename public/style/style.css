@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap");
 .midFlex,
 .flexMid {
   display: flex;
@@ -267,47 +265,6 @@
     transform: translateX(0);
   }
 }
-.h1 {
-  font-size: clamp(32px, 22px + 2.2vw, 60px);
-  letter-spacing: calc(1px + 0.1vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h2 {
-  font-size: clamp(23px, 18px + 1.65vw, 40px);
-  letter-spacing: calc(1px + 0.035vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h3 {
-  font-size: clamp(20px, 18px + 1vw, 29px);
-  letter-spacing: calc(1px + 0.018vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h4 {
-  font-size: clamp(18px, 13px + 0.7vw, 22px);
-  letter-spacing: calc(1px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.h5 {
-  font-size: clamp(16px, 11px + 0.4vw, 18px);
-  letter-spacing: calc(0.8px + 0.008vw);
-  font-weight: bold;
-  font-family: "Labrada";
-}
-
-.p {
-  font-size: clamp(13px, 11px + 0.4vw, 18px);
-  line-height: clamp(27px, 22px + 0.66vw, 33px);
-  font-family: "Reem Kufi fun";
-}
-
 .home-content-text {
   width: 100%;
   display: flex;

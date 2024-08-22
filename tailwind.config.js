@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -16,9 +16,14 @@ module.exports = {
         "2xl": "1400px",
       },
     },
-    extend: {screens: {
-      xs: "480px",
-    },
+    extend: {
+      fontFamily: {
+        labrada: ['Labrada', 'serif'],
+        reem: ['Reem Kufi Fun', 'sans-serif'],
+      },
+      screens: {
+        xs: "480px",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -36,4 +41,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
