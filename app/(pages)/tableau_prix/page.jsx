@@ -106,8 +106,10 @@ export default function PriceArray() {
         <h1 className={`entete-title-h1 text-center font-bold my-5`}>
           Estimatif de prix
         </h1>
+        <p className={`text-center my-2`}>Les tarifs sont donnés en Hors Taxe et à l'unité.</p>
+        <p className={`text-center my-2 `}>Pour chaque type d'éléments, entrez la quantité à droite, dans la case blanche.</p>
         <form
-          className={`flex max-md:flex-col justify-evenly items-center flex-wrap mx-auto gap-y-1 max-w-[750px]`}
+          className={`flex max-md:flex-col justify-evenly items-center flex-wrap mx-auto gap-y-1 max-w-[750px] mt-5`}
         >
           {produits.map((produit) => (
             <div
