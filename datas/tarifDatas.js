@@ -9,6 +9,7 @@ import { FaMoneyBillWave } from "react-icons/fa";
 
 import img1 from "@/public/images/4_price/price1.jpg";
 import img2 from "@/public/images/4_price/price_help2.png";
+import Link from "next/link";
 
 export const tarifDatas = [
   {
@@ -27,9 +28,8 @@ export const tarifDatas = [
           <a href="mailto:contact@christophe-cuisine.fr">
             contact@christophe-cuisine.fr
           </a>
-          <br />
-          <br />
-          ou en téléchargement :
+          <br /><br />
+          ou en téléchargeant :
           <a
             href="https://docs.google.com/spreadsheets/d/1hCvG2il1uTJ-siClwEo-MCpMSWOtEk5J/edit?usp=share_link&ouid=107187922781976477794&rtpof=true&sd=true"
             download="Grille Tarifaire.xls"
@@ -38,7 +38,8 @@ export const tarifDatas = [
           >
             {" "}
             Grille tarifaire
-          </a>
+          </a><br /><br />
+          ou en remplissant la grille : <Link href="/tableau_prix"><b>ICI</b></Link>
         </p>
 
         <div className="flex home-icone">
