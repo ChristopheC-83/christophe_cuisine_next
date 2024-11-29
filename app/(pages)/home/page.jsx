@@ -5,7 +5,7 @@ import enteteImg from "@/public/images/Entetes/accueil.png";
 
 export default function Accueil() {
   // texte entete
-  const text1 = "Préparons ensemble la pose !!!";
+  const text1 = "Préparons ensemble la pose ";
   const text2 = "de votre nouvelle cuisine.";
   const text3 = "Je vous accompagne";
   const text4 = "tout au long de votre projet.";
