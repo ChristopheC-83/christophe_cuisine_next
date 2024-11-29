@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header
       className={` w-full flex justify-between items-center
-         py-2 sm:py-3 md:py-4 
+         py-2 sm:py-2 md:py-2 
          px-3 sm:px-4 md:px-6
             max-w-[1024px] bg-neutral-200/85 md:rounded-b-full fixed top-0 left-1/2 -translate-x-[50%]  z-50 shadow-2xl filter-blur `}
     >
