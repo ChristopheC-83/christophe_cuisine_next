@@ -37,12 +37,9 @@
 
 .text-clip {
   background: linear-gradient(235deg, #c07f2a 50%, #000000 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
-}
-
-.bg-clip {
-  background: linear-gradient(235deg, #c07f2a 50%, #000000 100%);
 }
 
 .box-shadow-5 {
@@ -106,40 +103,18 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
-  background: -webkit-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
   background: -moz-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
   opacity: 0;
-  transform: translateY(100%);
-  transform-origin: left;
-  transition: all 0.5s ease-in-out;
-  z-index: 1; /* Assurez-vous que le before est derrière le contenu */
-}
-
-.navItemHover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
-  background: -webkit-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
-  background: -moz-linear-gradient(45deg, #ffffff 0%, #c07f2a 50%);
-  opacity: 0;
-  transform: translateY(-100%);
-  transform-origin: left;
+  transform: scale(0);
+  border-radius: 999px;
+  transform-origin: center;
   transition: all 0.5s ease-in-out;
   z-index: 1; /* Assurez-vous que le before est derrière le contenu */
 }
 
 .navItemHover:hover::before {
-  opacity: 70%;
-  transform: translateY(0);
-}
-
-.navItemHover:hover::after {
-  opacity: 70%;
-  transform: translateY(0);
+  opacity: 100%;
+  transform: scale(1);
 }
 
 .navItemHover h5 {
@@ -149,10 +124,10 @@
 
 .navActive {
   background: linear-gradient(45deg, #000000 0%, #c07f2a 50%);
-  background: -webkit-linear-gradient(45deg, #000000 0%, #c07f2a 50%);
   background: -moz-linear-gradient(45deg, #000000 0%, #c07f2a 50%);
   color: white;
   opacity: 90%;
+  transition: all 0.5s;
 }
 
 .navActive .navText {
@@ -228,7 +203,8 @@
   }
 }
 .filter-blur {
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 @media (max-width: 610px) {
